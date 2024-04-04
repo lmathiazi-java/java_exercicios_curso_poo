@@ -12,27 +12,24 @@ public class res_aula63_poo {
         Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
     
-        Triangulo X = new Triangulo();
+        Triangulo X, Y;
+        X = new Triangulo();
+        Y = new Triangulo();
+
         System.out.println("entre com as medidas do triangulo X: ");
-        
         X.a = entrada.nextDouble();
         X.b = entrada.nextDouble();
         X.c = entrada.nextDouble();
 
-        double p = (X.a + X.b + X.c) / 2;
-        double X_area = Math.sqrt(p * (p - X.a) * (p - X.b) * (p - X.c));
-
-        Triangulo Y = new Triangulo();
         System.out.println("entre com as medidas do triangulo Y: ");
-        
         Y.a = entrada.nextDouble();
         Y.b = entrada.nextDouble();
         Y.c = entrada.nextDouble();
 
-        p = (Y.a + Y.b + Y.c) / 2;
-        double Y_area = Math.sqrt(p * (p - Y.a) * (p - Y.b) * (p - Y.c));
-
+        double X_area = X.area();
         System.out.printf("a área do tringulo X é de: %.4f\n", X_area);
+
+        double Y_area = Y.area();
         System.out.printf("a área do tringulo Y é de: %.4f\n", Y_area);
 
         if (X_area > Y_area)
@@ -41,6 +38,5 @@ public class res_aula63_poo {
             System.out.println("maior área: Y");
 
         entrada.close();
-
     }
 }
