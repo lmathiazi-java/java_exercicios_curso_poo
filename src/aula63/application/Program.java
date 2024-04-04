@@ -3,7 +3,7 @@ package aula63.application;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class res_aula63 {
+public class Program {
     
         public static void main(String[] args) {
         
