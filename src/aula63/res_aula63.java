@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class res_aula63 {
+    
         public static void main(String[] args) {
         
         Locale.setDefault(Locale.US);
@@ -34,5 +35,6 @@ public class res_aula63 {
             System.out.println("maior área: Y");
 
         entrada.close();
+
     }
 }
